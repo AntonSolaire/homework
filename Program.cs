@@ -1,13 +1,33 @@
-﻿Console.WriteLine("Введите первое число");
+﻿// Задача 1
+
+// Console.WriteLine("Введите первое число");
+// int firstNumber = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите второе число");
+// int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+// if(firstNumber>secondNumber) {
+//     Console.WriteLine($"{firstNumber} больше, {secondNumber} меньше "); 
+// }
+// else {
+//     Console.WriteLine($"{secondNumber} больше, {firstNumber} меньше"); 
+// }
+
+//Задача 2
+
+Console.WriteLine("Введите первое число");
 int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
-int max = firstNumber;
-int min = secondNumber;
+Console.WriteLine("Введите третье число");
+int thirdNumber = Convert.ToInt32(Console.ReadLine());
 
-if(firstNumber>secondNumber) {
-    Console.WriteLine($"{firstNumber} больше"); 
+int max = firstNumber;
+
+if(secondNumber>max) {
+    max = secondNumber;
 }
-else {
-    Console.WriteLine($"{secondNumber} больше"); 
+
+if(thirdNumber>max) {
+    max = thirdNumber;
 }
+Console.WriteLine(max);
